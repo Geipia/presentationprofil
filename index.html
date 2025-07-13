@@ -66,13 +66,33 @@
       margin-top: 0;
       color: #3498db;
     }
-    section.contact ul,
-    section.projects ul {
+    .projects-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .project-btn {
+      display: inline-block;
+      padding: 20px 40px;
+      background: linear-gradient(135deg, #3498db, #9b59b6);
+      color: white;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      transition: transform 0.2s, background 0.3s;
+    }
+    .project-btn:hover {
+      background: linear-gradient(135deg, #2980b9, #8e44ad);
+      transform: scale(1.05);
+    }
+    section.contact ul {
       list-style: none;
       padding: 0;
     }
-    section.contact li,
-    section.projects li {
+    section.contact li {
       font-size: 1.1rem;
       margin: 10px 0;
     }
@@ -109,10 +129,10 @@
   <section class="projects">
     <div class="container">
       <h2>Projets</h2>
-      <ul>
-        <li><a href="https://nexus.eraz.ovh" target="_blank">Nexus</a> : nexus.eraz.ovh</li>
-        <li><a href="https://eraz.ovh" target="_blank">Eraz</a> : eraz.ovh</li>
-      </ul>
+      <div class="projects-buttons">
+        <a href="https://nexus.eraz.ovh" target="_blank" class="project-btn">Nexus</a>
+        <a href="https://eraz.ovh" target="_blank" class="project-btn">Eraz</a>
+      </div>
     </div>
   </section>
 
