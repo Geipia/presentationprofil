@@ -66,27 +66,16 @@
       margin-top: 0;
       color: #3498db;
     }
-    .projects-buttons {
-      display: flex;
-      flex-wrap: wrap;
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 20px;
-      justify-content: center;
       margin-top: 20px;
     }
-    .project-btn {
-      display: inline-block;
-      padding: 20px 40px;
-      background: linear-gradient(135deg, #3498db, #9b59b6);
-      color: white;
-      border-radius: 50px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-align: center;
-      transition: transform 0.2s, background 0.3s;
-    }
-    .project-btn:hover {
-      background: linear-gradient(135deg, #2980b9, #8e44ad);
-      transform: scale(1.05);
+    .service-item {
+      padding: 15px;
+      border-left: 4px solid #9b59b6;
+      background-color: #f9f9f9;
     }
     section.contact ul {
       list-style: none;
@@ -101,6 +90,9 @@
       background-color: #eee;
       padding: 20px;
       font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .services-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -126,29 +118,37 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section class="services">
     <div class="container">
-      <h2>Projets</h2>
-      <div class="projects-buttons">
-        <a href="https://nexus-by-eraz.loophole.site" target="_blank" class="project-btn">Nexus</a>
-        <a href="https://erazhub30.vercel.app" target="_blank" class="project-btn">Eraz</a>
+      <h2>Services & Collaborations</h2>
+      <p>Passionné par la technique, je propose mes services aux <strong>indépendants</strong> et aux <strong>particuliers</strong> pour concrétiser leurs idées numériques :</p>
+      <div class="services-grid">
+        <div class="service-item">
+          <strong>🌐 Création de sites web</strong><br>
+          Développement de sites vitrines modernes, responsives et personnalisés.
+        </div>
+        <div class="service-item">
+          <strong>💻 Programmes sur mesure</strong><br>
+          Conception de scripts et logiciels en Python pour automatiser vos tâches.
+        </div>
       </div>
     </div>
   </section>
 
   <section class="contact">
     <div class="container">
-      <h2>Contact</h2>
+      <h2>Me contacter</h2>
+      <p>Un projet en tête ? N'hésitez pas à me joindre pour en discuter !</p>
       <ul>
         <li><strong>📞 Téléphone :</strong> <a href="tel:+32474222926">+32 474 22 29 26</a></li>
-        <li><strong>✉️ Email :</strong> <a href="mailto:peltieraloys@hotmail.com">peltietaloys@hotmail.com</a></li>
+        <li><strong>✉️ Email :</strong> <a href="mailto:peltieralois@icloud.com">peltieralois@icloud.com</a></li>
       </ul>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Aloïs Peltier - Tous droits réservés.</p>
+      <p>&copy; 2026 Aloïs Peltier - Tous droits réservés.</p>
     </div>
   </footer>
 </body>
